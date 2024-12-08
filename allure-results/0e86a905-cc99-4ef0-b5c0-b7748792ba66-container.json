@@ -1,0 +1,1 @@
+{"uuid":"0e86a905-cc99-4ef0-b5c0-b7748792ba66","name":"botsystem.core.TestBase.init","children":["79a401f3-6069-43dc-90d3-6cf639454cbc"],"description":"","befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1733596096467,"stop":1733596097663}],"afters":[],"start":1733596096467,"stop":1733596097663}

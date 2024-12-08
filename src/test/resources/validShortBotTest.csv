@@ -1,0 +1,9 @@
+LRCBTC,Short,10,false,true,false,RSI,1w
+LRCETH,Short,7,true,false,true,EMA,1m
+QTUMBTC,Short,10,false,true,false,STOCHASTIC,3m
+ZRXBTC,Short,1,true,false,true,MACD,5m
+KNCBTC,Short,13,false,true,false,RSI,15m
+THEUSDT,Short,10,true,false,true,MACD,30m
+IOTAETH,Short,10,false,true,false,RSI,1h
+LINKBTC,Short,5,true,false,true,EMA,2h
+IOTAETH,Short,6,false,true,false,STOCHASTIC,4h

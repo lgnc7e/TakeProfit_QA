@@ -1,0 +1,10 @@
+LTCBTC,Long,10.00,false,true,false,SMA,3m
+BNBBTC,Long,7.00,true,false,true,EMA,1w
+NEOBTC,Long,10.00,false,true,false,STOCHASTIC,1m
+QTUMETH,Long,1.00,true,false,true,MACD,3d
+EOSETH,Long,13.00,false,true,false,SMA,8h
+SNTETH,Long,10.00,true,false,true,STOCHASTIC,4h
+BNTETH,Long,10.00,false,true,false,EMA,12h
+GASBTC,Long,5.00,true,false,true,RSI,15m
+BNBETH,Long,6.00,false,true,false,STOCHASTIC,1d
+BTCUSDT,Long,9.00,true,false,true,MACD,1w

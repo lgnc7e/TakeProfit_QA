@@ -1,0 +1,9 @@
+regqa.test,Qwerty@123
+reg@@qa.test,Qwerty@123
+@qa.test,Qwerty@123
+reg@,Qwerty@123
+reg@ qa.test,Qwerty@123 
+reg@qa test,Qwerty@123
+reg@qa.#test,Qwerty@123 
+reg@qa.,Qwerty@123
+reg@.test,Qwerty@123
