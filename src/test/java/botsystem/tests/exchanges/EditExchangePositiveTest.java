@@ -5,6 +5,7 @@ import botsystem.pages.AccountPage;
 import botsystem.pages.ExchangesPage;
 import botsystem.pages.HomePage;
 import botsystem.pages.RegisterPage;
+import botsystem.utils.AllureIgnore;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,6 +14,7 @@ import java.awt.*;
 
 public class EditExchangePositiveTest extends TestBase {
 
+    @AllureIgnore
     @BeforeMethod
     public void precondition() {
         new HomePage(driver)
@@ -41,6 +43,7 @@ public class EditExchangePositiveTest extends TestBase {
                 .verifyExchangeIsExist(ExchangeName + "New");
     }
 
+    @AllureIgnore
     @AfterMethod
     public void postCondition() throws AWTException {
         new ExchangesPage(driver)

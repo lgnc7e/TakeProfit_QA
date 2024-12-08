@@ -1,0 +1,5 @@
+1624 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\LGN\AppData\Local\JetBrains\IntelliJIdea2024.2\temp-testng-customsuite.xml
+
+2963 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 131.0.6778.87 (resolved driver for Chrome 131)
+3005 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\LGN\.cache\selenium\chromedriver\win64\131.0.6778.87\chromedriver.exe

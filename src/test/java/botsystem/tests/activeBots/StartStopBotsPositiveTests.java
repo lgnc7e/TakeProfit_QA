@@ -5,6 +5,7 @@ import botsystem.pages.AccountPage;
 import botsystem.pages.BotPage;
 import botsystem.pages.HomePage;
 import botsystem.pages.RegisterPage;
+import botsystem.utils.AllureIgnore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
@@ -16,6 +17,7 @@ import java.awt.*;
 public class StartStopBotsPositiveTests extends TestBase {
     private static final Logger logger = LoggerFactory.getLogger(StartStopBotsPositiveTests.class);
 
+    @AllureIgnore
     @BeforeMethod
     public void preCondition() throws AWTException {
         logger.info("Starting preCondition setup...");
@@ -61,6 +63,7 @@ public class StartStopBotsPositiveTests extends TestBase {
         logger.info("Bot stopped successfully.");
     }
 
+    @AllureIgnore
     @AfterMethod
     public void postCondition() throws AWTException {
         logger.info("Starting postCondition cleanup...");

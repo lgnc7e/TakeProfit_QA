@@ -5,6 +5,7 @@ import botsystem.pages.AccountPage;
 import botsystem.pages.BotPage;
 import botsystem.pages.HomePage;
 import botsystem.pages.RegisterPage;
+import botsystem.utils.AllureIgnore;
 import botsystem.utils.DataProviders;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,6 +15,7 @@ import java.awt.*;
 
 public class CreateBotsShortPositiveTest extends TestBase {
 
+    @AllureIgnore
     @BeforeMethod
     public void precondition() {
         new HomePage(driver)
@@ -35,6 +37,7 @@ public class CreateBotsShortPositiveTest extends TestBase {
     }
 
 
+    @AllureIgnore
     @AfterMethod
     public void postCondition() throws AWTException {
         new BotPage(driver)

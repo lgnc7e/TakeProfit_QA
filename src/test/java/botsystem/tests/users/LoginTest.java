@@ -5,6 +5,7 @@ import botsystem.pages.AccountPage;
 import botsystem.pages.HomePage;
 import botsystem.pages.LoginPage;
 import botsystem.pages.RegisterPage;
+import botsystem.utils.AllureIgnore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
@@ -17,7 +18,7 @@ public class LoginTest extends TestBase {
 
     Logger logger = LoggerFactory.getLogger(LoginTest.class);
 
-
+    @AllureIgnore
     @BeforeMethod
     public void precondition() {
         new HomePage(driver)
@@ -39,6 +40,7 @@ public class LoginTest extends TestBase {
                 .verifyInfLoginMessage();
     }
 
+    @AllureIgnore
     @AfterMethod
     public void postCondition() throws AWTException {
         new HomePage(driver)

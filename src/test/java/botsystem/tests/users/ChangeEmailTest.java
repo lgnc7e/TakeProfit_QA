@@ -4,6 +4,7 @@ import botsystem.core.TestBase;
 import botsystem.pages.AccountPage;
 import botsystem.pages.HomePage;
 import botsystem.pages.RegisterPage;
+import botsystem.utils.AllureIgnore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
@@ -16,6 +17,7 @@ public class ChangeEmailTest extends TestBase {
 
     Logger logger = LoggerFactory.getLogger(ChangeEmailTest.class);
 
+    @AllureIgnore
     @BeforeMethod
     public void precondition() throws AWTException {
         new HomePage(driver)
@@ -36,6 +38,7 @@ public class ChangeEmailTest extends TestBase {
     }
 
 
+    @AllureIgnore
     @AfterMethod
     public void postCondition() throws AWTException {
         new AccountPage(driver)

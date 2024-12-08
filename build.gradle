@@ -35,7 +35,6 @@ dependencies {
 test {
     useTestNG()
 
-    // Указываем папку для хранения результатов Allure
     systemProperty "allure.results.directory", "build/allure-results"
 
     finalizedBy 'allureReport'

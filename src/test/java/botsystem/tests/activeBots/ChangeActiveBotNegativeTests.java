@@ -5,6 +5,7 @@ import botsystem.pages.AccountPage;
 import botsystem.pages.BotPage;
 import botsystem.pages.HomePage;
 import botsystem.pages.RegisterPage;
+import botsystem.utils.AllureIgnore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
@@ -14,8 +15,10 @@ import org.testng.annotations.Test;
 import java.awt.*;
 
 public class ChangeActiveBotNegativeTests extends TestBase {
+
     private static final Logger logger = LoggerFactory.getLogger(ChangeActiveBotNegativeTests.class);
 
+    @AllureIgnore
     @BeforeMethod
     public void preCondition() throws AWTException {
         logger.info("Starting preCondition setup...");
@@ -52,6 +55,7 @@ public class ChangeActiveBotNegativeTests extends TestBase {
         logger.info("Unable to change running bot");
     }
 
+    @AllureIgnore
     @AfterMethod
     public void postCondition() throws AWTException {
         logger.info("Starting postCondition cleanup...");

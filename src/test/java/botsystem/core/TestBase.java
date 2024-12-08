@@ -3,10 +3,11 @@ package botsystem.core;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
@@ -32,16 +33,23 @@ public class TestBase {
         switch (browser.toLowerCase()) {
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--headless");
+                driver = new FirefoxDriver(firefoxOptions);
                 break;
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
                 break;
-            default:
+            default: // Chrome как браузер по умолчанию
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--disable-gpu");
+                chromeOptions.addArguments("--window-size=1920,1080");
+                driver = new ChromeDriver(chromeOptions);
         }
+
         //driver = new ChromeDriver();
         //driver.manage().window().setPosition(new Point(2500,0));
         driver.manage().window().maximize();
@@ -50,7 +58,10 @@ public class TestBase {
         driver.get("https://takeprofit.tech/");
         //driver.get("http://localhost:5173/");
 
-    }
+
+
+
+        }
     @AfterMethod(enabled = true)
     public void tearDown() {
         if (driver != null) {

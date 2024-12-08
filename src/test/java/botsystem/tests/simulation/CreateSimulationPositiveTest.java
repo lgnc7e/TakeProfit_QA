@@ -5,6 +5,7 @@ import botsystem.pages.AccountPage;
 import botsystem.pages.BotPage;
 import botsystem.pages.HomePage;
 import botsystem.pages.RegisterPage;
+import botsystem.utils.AllureIgnore;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,6 +14,7 @@ import java.awt.*;
 
 public class CreateSimulationPositiveTest extends TestBase {
 
+    @AllureIgnore
     @BeforeMethod
     public void precondition() {
         new HomePage(driver)
@@ -33,6 +35,7 @@ public class CreateSimulationPositiveTest extends TestBase {
                 .verifyIsSimulationExsist();
     }
 
+    @AllureIgnore
     @AfterMethod
     public void postСondition() throws AWTException {
         new HomePage(driver)
