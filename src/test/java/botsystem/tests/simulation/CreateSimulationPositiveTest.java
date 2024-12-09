@@ -14,8 +14,8 @@ import java.awt.*;
 
 public class CreateSimulationPositiveTest extends TestBase {
 
-    @AllureIgnore
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void precondition() {
         new HomePage(driver)
                 .clickOnRegistrationButton();
@@ -35,8 +35,8 @@ public class CreateSimulationPositiveTest extends TestBase {
                 .verifyIsSimulationExsist();
     }
 
-    @AllureIgnore
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postСondition() throws AWTException {
         new HomePage(driver)
                 .clickOnAccountButton();

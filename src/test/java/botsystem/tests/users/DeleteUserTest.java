@@ -16,8 +16,8 @@ public class DeleteUserTest extends TestBase {
 
     Logger logger = LoggerFactory.getLogger(DeleteUserTest.class);
 
-    @AllureIgnore
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void precondition() {
         new HomePage(driver)
                 .clickOnRegistrationButton();

@@ -17,8 +17,9 @@ public class ChangePasswordTest extends TestBase {
 
     Logger logger = LoggerFactory.getLogger(ChangePasswordTest.class);
 
-    @AllureIgnore
+
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void precondition() throws AWTException {
         new HomePage(driver)
                 .clickOnRegistrationButton();
@@ -37,8 +38,8 @@ public class ChangePasswordTest extends TestBase {
                 .verifyChangePasswordMessage();
     }
 
-    @AllureIgnore
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postCondition() throws AWTException {
         new AccountPage(driver)
                 .deleteAccount();

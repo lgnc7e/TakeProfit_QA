@@ -17,8 +17,8 @@ import java.awt.*;
 public class DeleteActiveBotNegativeTests extends TestBase {
     private static final Logger logger = LoggerFactory.getLogger(DeleteActiveBotNegativeTests.class);
 
-    @AllureIgnore
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void preCondition() throws AWTException {
         logger.info("Starting preCondition setup...");
         try {
@@ -52,8 +52,9 @@ public class DeleteActiveBotNegativeTests extends TestBase {
         logger.info("Cannot delete running bot");
     }
 
-    @AllureIgnore
+
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postCondition() throws AWTException {
         logger.info("Starting postCondition cleanup...");
         try {

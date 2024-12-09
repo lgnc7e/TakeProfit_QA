@@ -17,8 +17,8 @@ import java.awt.*;
 public class StartStopBotsPositiveTests extends TestBase {
     private static final Logger logger = LoggerFactory.getLogger(StartStopBotsPositiveTests.class);
 
-    @AllureIgnore
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void preCondition() throws AWTException {
         logger.info("Starting preCondition setup...");
         try {
@@ -63,8 +63,8 @@ public class StartStopBotsPositiveTests extends TestBase {
         logger.info("Bot stopped successfully.");
     }
 
-    @AllureIgnore
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postCondition() throws AWTException {
         logger.info("Starting postCondition cleanup...");
         try {

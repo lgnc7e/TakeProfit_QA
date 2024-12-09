@@ -17,8 +17,8 @@ public class ChangeEmailTest extends TestBase {
 
     Logger logger = LoggerFactory.getLogger(ChangeEmailTest.class);
 
-    @AllureIgnore
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void precondition() throws AWTException {
         new HomePage(driver)
                 .clickOnRegistrationButton();
@@ -38,8 +38,8 @@ public class ChangeEmailTest extends TestBase {
     }
 
 
-    @AllureIgnore
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postCondition() throws AWTException {
         new AccountPage(driver)
                 .deleteAccount();

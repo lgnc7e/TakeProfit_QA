@@ -18,8 +18,9 @@ public class ChangeActiveBotNegativeTests extends TestBase {
 
     private static final Logger logger = LoggerFactory.getLogger(ChangeActiveBotNegativeTests.class);
 
-    @AllureIgnore
+
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void preCondition() throws AWTException {
         logger.info("Starting preCondition setup...");
         try {
@@ -55,8 +56,9 @@ public class ChangeActiveBotNegativeTests extends TestBase {
         logger.info("Unable to change running bot");
     }
 
-    @AllureIgnore
+
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postCondition() throws AWTException {
         logger.info("Starting postCondition cleanup...");
         try {

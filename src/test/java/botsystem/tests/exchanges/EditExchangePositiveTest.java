@@ -14,8 +14,8 @@ import java.awt.*;
 
 public class EditExchangePositiveTest extends TestBase {
 
-    @AllureIgnore
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void precondition() {
         new HomePage(driver)
                 .clickOnRegistrationButton();
@@ -43,8 +43,8 @@ public class EditExchangePositiveTest extends TestBase {
                 .verifyExchangeIsExist(ExchangeName + "New");
     }
 
-    @AllureIgnore
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postCondition() throws AWTException {
         new ExchangesPage(driver)
                 .choiseExchange(ExchangeName)

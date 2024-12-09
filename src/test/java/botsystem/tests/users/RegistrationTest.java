@@ -17,8 +17,9 @@ public class RegistrationTest extends TestBase {
 
     Logger logger = LoggerFactory.getLogger(RegistrationTest.class);
 
-    @AllureIgnore
+
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void precondition() {
         new HomePage(driver)
                 .clickOnRegistrationButton();
@@ -34,8 +35,9 @@ public class RegistrationTest extends TestBase {
     }
 
 
-    @AllureIgnore
+
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postCondition() throws AWTException {
         new HomePage(driver)
                 .clickOnAccountButton();

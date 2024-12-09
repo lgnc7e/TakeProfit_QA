@@ -14,8 +14,8 @@ import java.awt.*;
 
 public class DeleteExchangePositiveTest extends TestBase {
 
-    @AllureIgnore
     @BeforeMethod
+    @io.qameta.allure.Step(" ")
     public void precondition() {
         new HomePage(driver)
                 .clickOnRegistrationButton();
@@ -42,8 +42,8 @@ public class DeleteExchangePositiveTest extends TestBase {
                 .verifyDeletion();
     }
 
-    @AllureIgnore
     @AfterMethod
+    @io.qameta.allure.Step(" ")
     public void postCondition() throws AWTException {
         new HomePage(driver)
                 .clickOnAccountButton();
