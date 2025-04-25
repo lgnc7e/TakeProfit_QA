@@ -22,14 +22,17 @@ Allure CLI installed for report generation
 
 Installation
 Clone the repository:
+
 git clone https://github.com/lgnc7e/TakeProfit_QA.git
 cd TakeProfit_QA
 
 Build the project:
+
 ./gradlew build
 
 Running Tests
 To run all tests:
+
 ./gradlew test
 Generating Allure Report
 After running the tests:
