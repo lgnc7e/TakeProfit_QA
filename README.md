@@ -2,20 +2,6 @@ TakeProfit_QA
 
 TakeProfit_QA is an automated testing project for web applications built using Java, Gradle, and Allure. The project follows the Page Object Model (POM) design pattern to ensure scalability and maintainability of tests.
 
-📁 Project Structure
-TakeProfit_QA/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   └── test/
-│       └── java/
-├── build.gradle
-├── settings.gradle
-├── gradlew
-├── gradlew.bat
-└── allure-results/
-
-
 src/main/java/ — main application logic (if applicable).
 src/test/java/ — test classes and page objects.
 build.gradle — project build configuration.
